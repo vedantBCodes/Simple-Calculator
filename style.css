@@ -2,16 +2,20 @@ body{
     background-color: azure;
 }
 .container{
-    width:400px;
+    width:330px;
     height: 400px;
-    position: absolute;
-    right:35%;
-    top:25%;
     background-color: rgb(49, 49, 48);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:100px;
 }
 .r-container{
     display: flex;
@@ -20,22 +24,19 @@ body{
     justify-content: space-around;
 }
 input[type="button"]{
-    width: 80px;
+    width: 70px;
     height: 40px;
     background-color: black;
-    /* box-shadow: 0 8px 16px 0 rgba(173, 130, 130, 0.2), 0 6px 20px 0 rgba(105, 65, 65, 0.19); */
-}
-input.hover{
-    width:100px;
 }
 input[type="text"]{
-    width: 370px;
+    width: 300px;
     height: 50px;
+    background-color: rgba(0, 0, 0, 0.462);
 }
 *{
     font-size: 20px;
     color: white;
 }
-input{
-    /* border-radius: 5px; */
+.opr{
+    color:rgb(80, 154, 154)
 }
