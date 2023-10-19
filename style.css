@@ -1,0 +1,41 @@
+body{
+    background-color: azure;
+}
+.container{
+    width:400px;
+    height: 400px;
+    position: absolute;
+    right:35%;
+    top:25%;
+    background-color: rgb(49, 49, 48);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.r-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+input[type="button"]{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    /* box-shadow: 0 8px 16px 0 rgba(173, 130, 130, 0.2), 0 6px 20px 0 rgba(105, 65, 65, 0.19); */
+}
+input.hover{
+    width:100px;
+}
+input[type="text"]{
+    width: 370px;
+    height: 50px;
+}
+*{
+    font-size: 20px;
+    color: white;
+}
+input{
+    /* border-radius: 5px; */
+}
