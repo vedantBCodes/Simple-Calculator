@@ -1,5 +1,5 @@
 body{
-    background-color: azure;
+    background-color: rgba(216, 204, 204, 0.519);
 }
 .container{
     width:330px;
@@ -39,4 +39,15 @@ input[type="text"]{
 }
 .opr{
     color:rgb(80, 154, 154)
+}
+
+#equal{
+    width:150px;
+}
+#heading{
+    background-color: rgb(240, 240, 226);
+    color: black;
+}
+#heading div h1{
+    color:black;
 }

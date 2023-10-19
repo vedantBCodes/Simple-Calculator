@@ -9,14 +9,18 @@
   </head>
   <body>
     <div class="main-container">
+      
     <div class="container">
+      <div class="r-container" id="heading">
+        <div> <h1> Do Your Calculations </h1></div>
+      </div>
       <div class="r-container">
         <input type="text" placeholder="Answer" name="displayAnswer" readonly id="dis"/>
       </div>
       <div class="r-container">
         <input type="button" value="AC" class="opr" onclick="clearAll();"/>
         <input type="button" value="DEL" class="opr" onclick="deleteOne();"/>
-        <input type="button" value="%" class="opr" onclick="display('%');"/>
+        <input type="button" value="." class="opr" onclick="display('.');"/>
         <input type="button" value="/" class="opr" onclick="display('/');"/>
       </div>
       <div class="r-container">
@@ -40,8 +44,7 @@
       <div class="r-container">
         <input type="button" value="0" class="num" onclick="display('0');"/>
         <input type="button" value="00" class="num" onclick="display('00');"/>
-        <input type="button" value="." class="opr" onclick="display('.');"/>
-        <input type="button" value="=" class="opr" onclick="evaluateX();"/>
+        <input type="button" value="=" class="opr" id="equal" onclick="evaluateX();  " />
       </div>
     </div>
   </div>
