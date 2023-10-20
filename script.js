@@ -1,7 +1,9 @@
 var temp='';
 
-function checkForLastCharacter(num)
-{
+function checkForLastCharacter(num) 
+{                                  
+    //This function will put a restriction on entering a more than one consecutive operator
+    //It will check if the last entered character was an operator or not . If yes then it will not take any operator just after that
     var opr=['+','-','*','/','.','%','='];
     var lastChar=temp[temp.length-1];
     if(opr.includes(num))
