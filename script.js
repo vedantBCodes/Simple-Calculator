@@ -27,7 +27,7 @@ function checkForLastCharacter(num)
     {
         if(opr.includes(lastChar))
         {
-            alert("Invalid input");
+           
         }
         else
         {
@@ -43,7 +43,7 @@ function checkForLastCharacter(num)
       checkForFirstCharacter(num);
       if(check==true)
       {
-         alert("Invalid input");
+       
       }
       else
       {
