@@ -1,5 +1,22 @@
 var temp='';
+var check;
+function checkForFirstCharacter(num)
+{
+    //This function will put a restriction on entering an operators (like * / = and .) at first
+    var opr=['*','/','=','.'];
+    if(temp.length==0)
+    {
+      if(opr.includes(num))
+      {
+        check=true;
+      }
+      else
+      {
+        check=false;
+      }
+    }
 
+}
 function checkForLastCharacter(num) 
 {                                  
     //This function will put a restriction on entering a more than one consecutive operator
@@ -10,7 +27,7 @@ function checkForLastCharacter(num)
     {
         if(opr.includes(lastChar))
         {
-            alert("Invalid Input")
+            alert("Invalid input");
         }
         else
         {
@@ -23,10 +40,17 @@ function checkForLastCharacter(num)
     }
 }
     function display(num){
-
-        checkForLastCharacter(num);
+      checkForFirstCharacter(num);
+      if(check==true)
+      {
+         alert("Invalid input");
+      }
+      else
+      {
+      checkForLastCharacter(num);
       var x=document.getElementById("dis");
       x.setAttribute('value',temp);
+      }
     }
 
     function clearAll()
